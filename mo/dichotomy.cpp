@@ -32,5 +32,6 @@ int main()
         en = (b - a) / 2;
     }
 
-    cout << (a + b) / 2 << " " << f((a + b) / 2);
+    cout << "x*: " << (a + b) / 2 << endl;
+    cout << "f(x*): " << f((a + b) / 2) << endl;
 }

@@ -34,5 +34,6 @@ int main()
         }
     }
 
-    cout << x0 << " " << f0;
+    cout << "x*: " << x0 << endl;
+    cout << "f(x*): " << f0 << endl;
 }
