@@ -35,8 +35,8 @@ int main()
             f1 = f2;
             x2 = b - (b - a) * T1;
             f2 = f(x2);
-            en = T * en;
         }
+        en = T * en;
     }
 
     cout << "x*: " << (a + b) / 2 << endl;
