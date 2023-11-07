@@ -30,10 +30,18 @@ def random_password():
 
 
 def generate_all(n):
-    data = []
-    for i in range(n):
-        data.append([random_id(), random_login(), random_password()])
-    return data
+    id = set()
+    login = set()
+    password = set()
+
+    while len(id) < n:
+        id.add(random_id())
+    while len(login) < n:
+        login.add(random_login())
+    while len(password) < n:
+        password.add(random_password())
+
+    return list(zip(id, login, password))
 
 
 n = int(input())
