@@ -20,7 +20,7 @@ def random_password():
     random_char = rnd.choice(ascii_uppercase)
     random_odd_digit = rnd.choice(odd_digit)
 
-    sequence = odd_digit + ["2", "4", "6", "8"] + list(ascii_uppercase) + list(ascii_lowercase)
+    sequence = odd_digit + ["0", "2", "4", "6", "8"] + list(ascii_uppercase) + list(ascii_lowercase)
 
     random_sequence = rnd.choices(sequence, k=8)
     random_sequence += random_char + random_odd_digit
