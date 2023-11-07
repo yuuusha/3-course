@@ -29,10 +29,15 @@ def random_password():
     return "".join(random_sequence)
 
 
+def generate_all(n):
+    data = []
+    for i in range(n):
+        data.append([random_id(), random_login(), random_password()])
+    return data
+
+
 n = int(input())
-data = []
-for i in range(n):
-    data.append([random_id(), random_login(), random_password()])
+data = generate_all(n)
 
 pp = pprint.PrettyPrinter()
 pp.pprint(data)
